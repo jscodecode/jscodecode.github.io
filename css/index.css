@@ -1279,8 +1279,8 @@ canvas:not(#ribbon-canvas),
 [data-theme='light'] {
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #f2c5c5;
+  --hr-before-color: #edadad;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-result-title: #4c4948;
@@ -1293,7 +1293,7 @@ canvas:not(#ribbon-canvas),
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff7242;
+  --btn-hover-color: #e58a8a;
   --btn-color: #fff;
   --btn-bg: #49b1f5;
   --text-bg-hover: #49b1f5;
@@ -1638,7 +1638,7 @@ figure.highlight pre .javascript .function {
 blockquote {
   margin: 0 0 1rem;
   padding: 0.1rem 0.8rem;
-  border-left: 0.2rem solid #49b1f5;
+  border-left: 0.2rem solid #e58a8a;
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
 }
@@ -1849,7 +1849,7 @@ blockquote footer cite:before {
   font-size: 1.72em;
 }
 .article-sort-title:hover:before {
-  border-color: #ff7242;
+  border-color: #e58a8a;
 }
 .article-sort-title:before {
   position: absolute;
@@ -1901,7 +1901,7 @@ blockquote footer cite:before {
   transition: all 0.2s ease-in-out;
 }
 .article-sort-item:hover:before {
-  border-color: #ff7242;
+  border-color: #e58a8a;
 }
 .article-sort-item:before {
   position: absolute;
@@ -1931,7 +1931,7 @@ blockquote footer cite:before {
   border-color: #49b1f5;
 }
 .article-sort-item.year:before {
-  border-color: #ff7242;
+  border-color: #e58a8a;
 }
 .article-sort-item-time {
   color: #858585;
@@ -2055,7 +2055,7 @@ blockquote footer cite:before {
   content: '';
 }
 #page .category-lists ul li:hover:before {
-  border-color: #ff7242;
+  border-color: #e58a8a;
 }
 .layout {
   display: -webkit-box;
@@ -3758,7 +3758,7 @@ _:future,
   overflow-wrap: break-word;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #99a9bf;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -4246,6 +4246,12 @@ _:future,
 }
 #vcomment .vbtn:hover {
   background: var(--btn-hover-color);
+}
+#vcomment textarea {
+  background: url("/image/comment_bg.png") 100% 100% no-repeat;
+}
+#vcomment textarea:focus {
+  background-image: none;
 }
 #vcomment .vimg {
   -webkit-transition: all 0.3s;
@@ -5359,14 +5365,6 @@ blockquote.pullquote.right {
 .read-mode #web_bg {
   display: none !important;
 }
-.read-mode #chatra,
-.read-mode #tidio-chat-code,
-.read-mode #tidio-chat,
-.read-mode #daodream-container,
-.read-mode .gitter-chat-embed,
-.read-mode .gitter-open-chat-button {
-  display: none !important;
-}
 .read-mode #article-container a {
   color: #99a9bf;
 }
@@ -5579,7 +5577,7 @@ blockquote.pullquote.right {
   line-height: 1.7;
 }
 #local-search .search-dialog .local-search__hit-item:hover:before {
-  border-color: #ff7242;
+  border-color: #e58a8a;
 }
 #local-search .search-dialog .local-search__hit-item:before {
   position: absolute;
