@@ -1,5 +1,5 @@
 var title2="msg=SONGSONG'Blog又有新评论啦~！--by Valine\n"
-var SCKEY_Qmsg="https://qmsg.zendee.cn/send/dfa7f59c7af03c13c2f538917887e1a7"
+var SCKEY_Qmsg="https://qmsg.zendee.cn/send/dfa7f59c7af03c13c2f538917887e1a7.html"
 var ValineButton=document.getElementsByClassName("vsubmit vbtn")[0];
 function send_valine_Qmsg(){
     var pagename=document.title;
