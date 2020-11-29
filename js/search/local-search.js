@@ -55,7 +55,10 @@ $(function () {
 
   function search (path) {
     $.ajax({
-      url: GLOBAL_CONFIG.root + path,
+      //当你的文章越写越多的时候你的本地搜索 search.xml 文件大小会越来越大，从而会托面你博客的加载速度
+      //所以做了如下的修改
+      //url: GLOBAL_CONFIG.root + path,
+      url: "https://cdn.jsdelivr.net/gh/jscodecode/jscodecode.github.io/search.xml",
       dataType: 'xml',
       success: function (xmlResponse) {
         // get the contents from search data
