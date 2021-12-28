@@ -1,8 +1,27 @@
 /* 自定义字体 */
-
 @font-face {
-    font-family: 'VarelaRound';
-    src: url('/css/VarelaRound-Regular.ttf');
+    font-family: 'sleek';
+    src: url('https://cdn.jsdelivr.net/gh/lete114/CDN2/zaxiang/sleek.woff2');
+}
+
+
+/* 隐藏回到顶部按钮，替换为up酱 */
+
+#go-up i {
+    display: none;
+    background-color: transparent !important;
+}
+
+#go-up {
+    background-color: transparent !important;
+}
+
+#upj {
+    transform: translate(-70px, -80px) !important;
+}
+/*新版3.0.0以上添加up酱置顶ico图标上移问题*/
+.fas.fa-arrow-up {
+    line-height: 2;
 }
 
 /*闪烁*/
@@ -11,6 +30,10 @@
     animation: Blink 0.7s infinite;
     -webkit-animation: Blink 0.7s infinite;
     animation: Blink 0.7s infinite;
+}
+/* 博主昵称颜色 */
+.author-info__name {
+    color: #ff7242;
 }
 
 @-webkit-keyframes Blink {
@@ -70,7 +93,6 @@
 
 .layout_post .post-copyright .post-copyright-info a {
     text-decoration: none;
-    word-break: break-word;
 }
 
 
@@ -81,7 +103,7 @@
 }
 
 
-/* 评论框  */
+//* 评论框  */
 
 .vwrap {
     box-shadow: 2px 2px 5px #bbb;
@@ -114,21 +136,6 @@
     color: #c7254e;
     background-color: #F9F2F4;
 }
-
-/* header背景透明 */
-
-#page-header {
-    background-color: transparent;
-}
-
-
-/* 页脚透明 */
-
-#footer {
-    background: transparent !important;
-}
-
-
 /* 设置评论框 */
 
 .vcard {
@@ -147,6 +154,20 @@
     background: rgba(255, 255, 255, 0.0);
     padding: 0px;
 }
+
+/* header背景透明 */
+
+#page-header {
+    background-color: transparent;
+}
+
+
+/* 页脚透明 */
+
+#footer {
+    background: transparent !important;
+}
+
 
 
 /* a(链接)标签的默认颜色 */
@@ -168,14 +189,16 @@
     text-decoration: none;
 }
 
-
 /* 鼠标悬停时的颜色 */
 
 #article-container a:hover {
     color: #e58a8a;
     text-decoration: none;
 }
-
+/*a标签颜色*/
+a {
+    color: #00c4b6;
+}
 
 /*Lete个人博客颜色修改*/
 
@@ -247,8 +270,8 @@ a {
 
 /* 鼠标图标 */
 
-body * {
-    cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png), auto !important;
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png), auto;
 }
 
 

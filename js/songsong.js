@@ -99,7 +99,9 @@ function qipao() {
         }(), window.addEventListener("scroll", c, !1), window.addEventListener("resize", s, !1)
     }
 }(jQuery);
-qipao()
+
+// 调用气泡方法
+qipao();
 
 
 // 设置页脚博主
